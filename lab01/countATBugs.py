@@ -2,7 +2,12 @@
 # Name: Jessica Magana
 # Group Members: none
 
-""" This script provides the AT ratio of a DNA sequence.
+""" 
+There are several bugs in this script that need to be changes and addressed.
+
+The bugs are addressed as comments next to the line of code where the bug was found.
+
+This script provides the AT ratio of a DNA sequence.
 -------------
 Input: The user enters a DNA sequence.
 ------------
@@ -48,7 +53,7 @@ upperDNA = dna.upper()
 
 coolString = dnaString(upperDNA)
 
-""" This line prints out the AT ratio of the given DNA sequence to three decimal places
-using the getAT() function. """
+#This line prints out the AT ratio of the given DNA sequence to three decimal places
+#using the getAT() function.
 
-print("AT content = {0:0.3f}".format(coolString.getAT())) #should be 0:0.3 to get three decimal places.
+print("AT content = {0:0.3f}".format(coolString.getAT())) #should be 0:0.3 not 0:0.1 to get three decimal places.
