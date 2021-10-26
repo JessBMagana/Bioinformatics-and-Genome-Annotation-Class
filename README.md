@@ -1,5 +1,5 @@
 # Bioinformatics-and-Genome-Annotation-Class
-Class into bioinformatics and genome annotation using Python
+Class into bioinformatics and genome annotation using Python.
 This repository holds all of the lessons obtained in this class.
 
 Lab01:
