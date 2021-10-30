@@ -44,6 +44,15 @@ the sequence length, the GC content and the amino acid composition.
 
 NCBI_Activity:
 This is the fourth lesson. This lesson introduces the student to the National Center
-for Biotechnology Information (NCBI). The student also learned how to download a FASTA genome
-file through the terminal using the command wget. Lastly, the student used their
-nucParams.py script on the FASTA genome file for the homo sapien reference genome GRCh38.p13.
+for Biotechnology Information (NCBI). The student also learned how to download files
+through the terminal using the command wget. Directions for the lesson and the links 
+to the files are found in the file 'NCBI_Activity.pdf'. This lesson contains two parts.
+
+    Part 1:
+        The student must use their nucParams.py script from Lab03 on the FASTA genome 
+        file for the homo sapien reference genome GRCh38.p13.
+    
+    Part 2:
+        The student must create a program that extracts the gene sequences from a 
+        reference genome. The gene locations are stored in a 'general feature format'
+        (GFF) file.
