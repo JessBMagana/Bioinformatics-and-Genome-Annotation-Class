@@ -40,7 +40,8 @@ student how to manipulate data types.
 Lab03:
 This is the third lesson. This lesson includes a single Python program called 
 nucParams.py that takes a FASTA file as input and calculates the nucleotide content,
-the sequence length, the GC content and the amino acid composition.
+the sequence length, the GC content and the amino acid composition. Directions for
+this lesson are found in the file 'lab03.pdf'.
 
 NCBI_Activity:
 This is the fourth lesson. This lesson introduces the student to the National Center
