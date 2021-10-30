@@ -1,6 +1,8 @@
 # Bioinformatics-and-Genome-Annotation-Class
-Class into bioinformatics and genome annotation using Python.
-This repository holds all of the lessons obtained in this class.
+A San Francisco State University course on bioinformatics and 
+genome annotation using Python (Biol 638/738).
+
+This repository holds all of the lessons in the course.
 
 Lab01:
 This is the first lesson. This lesson includes four python scripts that
