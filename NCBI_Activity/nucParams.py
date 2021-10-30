@@ -226,13 +226,21 @@ class nucParams(object):
             amino acids.
 
         """
-        codon_to_aa = [] # an empty list that will save each three letter amino acid found in the sequence.
-        aa_to_short_aa = [] # an empty list that will save each one letter amino acid matched from the list codon_to_aa
+        clean_seq = "" # an empty string
 
-        for i in range(0,len(self.seq),3):
+        for i in self.seq: # iterates through each nucleotide in self.seq
+            if i == "N": # if the nucleotide is denoted by the letter N
+                pass # skip it
+            else: # if the nucleotide is anything besides an N (i.e. A, T, C, G)
+                clean_seq += i # add the nucleotide to the growing string
+
+        codon_to_aa = [] # an empty list that will save each three letter amino acid found in the sequence.
+        # aa_to_short_aa = [] # an empty list that will save each one letter amino acid matched from the list codon_to_aa
+
+        for k in range(0,len(clean_seq),3):
         # iterates through the sequence starting from zero until
         # the length of the sequence by steps of three.
-            codon = self.seq[i:i+3] # iterates through each set of three nucleotides in the sequence
+            codon = clean_seq[k:k+3] # iterates through each set of three nucleotides in the sequence
             if len(codon) < 3:
                 pass # ignores extra bases in the sequence
             else:
@@ -274,7 +282,7 @@ def main():
             if line[0] == ">": # if the first character in the file is ">"
                 pass #skips the line
             else: # if the first character is not ">"
-                seq += line # save all other lines into the variable "seq"
+                seq += line.upper() # save all other lines into the variable "seq"
 
     # creates an instance of the class nucParams with the FASTA file provided.
     # saves it into the variable fasta_seq.
@@ -288,7 +296,7 @@ def main():
     # prints the ratio of "C" nucleotides in the sequence as a whole number and a percentage.
     print("% of G's: {0:0.0f}".format(fasta_seq.gComposition()) + " %")
     # prints the ratio of "G" nucleotides in the sequence as a whole number and a percentage.
-    print("GC Content: {0:0.0f}".format(fasta_seq.gcContent()) + " %")
+    print("GC Content: {0:0.2f}".format(fasta_seq.gcContent()) + " %")
     # prints the ratio of G's and C's in the sequence as a whole number and a percentage.
     print("Sequence Length: " + str(fasta_seq.sequenceLength()) + " bp")
     # prints the length of the sequence
