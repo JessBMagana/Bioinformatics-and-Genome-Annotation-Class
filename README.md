@@ -59,3 +59,10 @@ to the files are found in the file 'NCBI_Activity.pdf'. This lesson contains two
         The student must create a program that extracts the gene sequences from a 
         reference genome. The gene locations are stored in a 'general feature format'
         (GFF) file.
+
+Lab04:
+This is the fourth lesson. In this lesson, the student will investigate and hypothesize
+the origin of an ancient DNA sample. This lesson contains three sam files that contain
+reference genomes for either cow, sheep, or deer. The student will compare the ancient
+DNA sample with these three reference genomes and figure out which animal it is closely
+related to. 
