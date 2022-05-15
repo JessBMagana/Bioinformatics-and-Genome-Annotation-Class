@@ -1,6 +1,6 @@
 # Bioinformatics-and-Genome-Annotation-Class
 A San Francisco State University course on bioinformatics and 
-genome annotation using Python (Biol 638/738).
+genome annotation using Python and Bash (Biol 638/738).
 
 This repository holds all of the lessons in the course.
 
